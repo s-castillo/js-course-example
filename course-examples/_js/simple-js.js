@@ -311,7 +311,7 @@ const strings1 = [
     "Numbers",
     "As",
     "Text",
-    "Not Numericals"
+    "Not Numerals"
 ]
 
 const numbers1 = [
@@ -355,7 +355,7 @@ console.log(numbers1.length)
 // Add your name after Winston Churchill in the list
 // Remove Benjamin Franklin from this list
 // Remove Steve Jobs from this list
-// Remove Napolean Bonaparte from this list
+// Remove Napoleon Bonaparte from this list
 const friendAddName = 'Shawn Added'
 const friendAddNameArray = [friendAddName]
 
@@ -434,7 +434,7 @@ console.log(slicedArray2)
 // Okay so what if we wanted to just remove the ending of an array - we know what the array is and that we want to remove this last item - format the variable in this way (0,-1) this calls for the last item (0,-2) calls for the SECOND to last item - and so on - Negative numbers can only be used in slice 
 
 // Now we're going to set up a situation that we're wanting remove some items from the middle of the known array:
-// Rough Idea is to slice out the parts we want to retain and then join them .concat them back to gether at the end of this.  
+// Rough Idea is to slice out the parts we want to retain and then join them .concat them back to gather at the end of this.  
 
 // In our example we're going to want to remove numbers 3 & 4 from our arrayToSlice array list. 
 
@@ -460,7 +460,7 @@ const dumbArray = []
 const simpleArray = ["a", "b", "c"]
 
 // If - Else Statements Section here 
-// Anatomy of the if/else statment declaration 
+// Anatomy of the if/else statement declaration 
 
 if ("condition") {
     // Do Some Function Here
@@ -468,7 +468,7 @@ if ("condition") {
     // Do Some Other Function Here
 }
 
-// The condition in this delcaration is telling .js what to check before continuing on - if the condition evaluates to be "true" - .js will then execute the code within the if{} block. 
+// The condition in this declaration is telling .js what to check before continuing on - if the condition evaluates to be "true" - .js will then execute the code within the if{} block. 
 
 // If the condition is evaluated to be "false" the .js will execute everything within the else{} block.
 
@@ -489,7 +489,7 @@ if ("light is red") {
     // Do the final thing
 }
 
-// if/else statements are based on the idea of comparing something is either "true" or "false" which utilizes .js extensive comparision library of signs to use depending on what type of comparison you're trying to do. 
+// if/else statements are based on the idea of comparing something is either "true" or "false" which utilizes .js extensive comparison library of signs to use depending on what type of comparison you're trying to do. 
 
 // We have the following example of the different types of comparison operators
 
@@ -614,7 +614,7 @@ if (hasApples) {
 
 // A truthy value, on the other hand, is a value that evaluates to true when converted into a Boolean. In the case of numbers, anything that's not 0 converts to true.
 
-// Automatic type conversion to truthy and falsey values are highly encouraged in JavaScript, because they make code shorter and easier to comprehend.
+// Automatic type conversion to Truthy and Falsey values are highly encouraged in JavaScript, because they make code shorter and easier to comprehend.
 
 // For example, if you want to check if a string is empty, you can use the string in the condition straightaway.
 
