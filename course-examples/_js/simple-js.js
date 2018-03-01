@@ -8,7 +8,7 @@ console.log("I'm writing JavaScript") // I mean technically yes but we all know 
 
 console.log("I'm using double quotes for my entries into the console because I feel that it's easier to have more punctuation with the double and have it look normal to the eye.")
 
-console.log("string that I'm" + " going to add here" + " and another section being added here" + " and here, resulting in 4 separeate strings being added together") // My Example of stringing together a group of strings - I like to have my examples be a little more complex. 
+console.log("string that I'm" + " going to add here" + " and another section being added here" + " and here, resulting in 4 separate strings being added together") // My Example of stringing together a group of strings - I like to have my examples be a little more complex. 
 
 console.log(23)
 console.log(20 + 3)
@@ -32,12 +32,12 @@ console.log(totalApples) // 31
 
 //Declaring a function
 function firstFunction() {
-    console.log("holy shit this is our first function and it's prety cool.")
+    console.log("holy shit this is our first function and it's pretty cool.")
 }
 
 firstFunction() // This is us "calling" our function - triggering our function. 
 
-// creating a function for loggin first and last name of someone
+// Creating a function for logging first and last name of someone
 
 function nameNoted(firstName, lastName) {
     console.log("Their name is " + firstName)
@@ -45,7 +45,7 @@ function nameNoted(firstName, lastName) {
 }
 
 nameNoted("Shawn", "Castillo")
-    //This is basically saying that we're assigning a value of Shawn to firstName and a value of Castillo to lastName - You dont necessarily need to declare a variable separately to assign a value - this is when you're declaring and envoking the function after
+    //This is basically saying that we're assigning a value of Shawn to firstName and a value of Castillo to lastName - You dont necessarily need to declare a variable separately to assign a value - this is when you're declaring and invoking the function after
 
 function logger(someLog) {
     console.log(someLog)
@@ -60,7 +60,7 @@ function addMyNumbers(number1, number2) {
 addMyNumbers(20, 3)
 
 function multiplyMyNumbers(number1, number2) {
-    console.log(number1 * number2 + " the multiplication outcome should end up comeing to 46")
+    console.log(number1 * number2 + " the multiplication outcome should end up coming to 46")
 }
 
 multiplyMyNumbers(23, 2)
@@ -80,28 +80,30 @@ const arrowFunctionNotation = (arg1, arg2) => {
 
 /*
 Well what are we doing here :
-We're creating a constant varible that is a function - it does an action that we dont need to have a separate name for. Now the reason for having this be like this is still not yet clear to me but I'm working through it.
+We're creating a constant variable that is a function - it does an action that we dont need to have a separate name for because we're declaring the name of that function "arrowFunctionNotation". 
+
+Now the reason for having this be like this is still not yet clear to me but I'm working through it.
 */
 
 // You can also make these anonymous functions with no arguments to start with and those look different depending on what sort of information you're looking to get back -
 
-// If you supply 0 arguments to the function you can subsitute the parenthesis with underscores
+// If you supply 0 arguments to the function you can substitute the parenthesis with underscores
 
 const zeroArgs = () => { /* Do some code here  */ }
 const zeroArgsWithUnderscore = _ => { /* Do some code here  */ }
 
-// If you supply only 1 arguemnt to the function you can still leave off the parenthesis as follows
+// If you supply only 1 argument to the function you can still leave off the parenthesis as follows
 
 const oneArgument = arg1 => { /* Do some more really cool stuff */ }
 const oneArgumentWithParenthesis = (arg1) => { /* Do some more really cool stuff */ }
 
-// Anything more than 1 arugment has to have parenthesis and commas to separeate those values
+// Anything more than 1 argument has to have parenthesis and commas to separate those values
 
 // Understanding the different types of Return that you can request when creating your code.
 
-// Arrow functions like I'm learning right now will automaticlly create "return" statements
+// Arrow functions like I'm learning right now will automatically create "return" statements
 
-// The old way of getting information out of a function was to envoke a return at the end of the function just before the closing tag of the function so that it captured everything it needed.
+// The old way of getting information out of a function was to invoke a return at the end of the function just before the closing tag of the function so that it captured everything it needed.
 
 // Also remember that this is for very basic of anonymous functions that can be contained within a single line of code
 
@@ -112,25 +114,27 @@ const sumNormal = function(num1, num2) {
 
 // New method of writing the same thing out
 const sumArrowMethod = (num1, num2) => num1 + num2
-    // It does feel very weird that I dont have to write the ; after the very end of the varable. Makes me still feel uncomfortable.
+    // It does feel very weird that I dont have to write the ; after the very end of the variable. Makes me still feel uncomfortable.
 
 // THIS in javascript will be getting to at another point in the lessons but right now we're going to pass it up and move on to something else.
 
-// Workign with Arrow notation:
+// Working with Arrow notation:
 // This is technically correct but it needs to be don in new method way
 const ten = () => 10
 ten()
     //Correct way of expressing the exercise
     // const ten = _ => 10
+    // You log the argument not the name of the function - you call the name of the function and pass something into it to get something out of it - just calling the function will bring back the function code itself and not the date generated from the function parameters/rules.
 
-// You log the argument not the name of the function - you call the name of the function and pass something into it to get something out of it - just calling the fucntion will bring back the function code itself and not the date genereated from the function parameters/rules.
 const loggerArrowMethod = (logArg1) => {
     console.log(logArg1);
 }
 
+// The long string between the () is the LogArg1 - we defined what we're passing in to the function in the variable declared above. So when we call the variable / 
+
 loggerArrowMethod("This is my text that I'm passing through a simple anonymous function that is going to output this text to the console so that I can get feedback on what's going on with my code and to test to see that it's working and doing things")
 
-// Without Implicit Returns - You have to specifically add the return line to the code to get infomation to come back out.
+// Without Implicit Returns - You have to specifically add the return line to the code to get information to come back out.
 function add(num1, num2) {
     return num1 + num2
 }
@@ -143,7 +147,7 @@ const multiply2 = (num1, num2) => {
     return num1 * num2
 }
 
-// Remember that you have to envoke the function in the console in order to get anything form the function. If you don't log the info to the console you'll not immediately see that anything has changed. Remembering that you have to manually set that to 'log' that information.
+// Remember that you have to invoke the function in the console in order to get anything form the function. If you don't log the info to the console you'll not immediately see that anything has changed. Remembering that you have to manually set that to 'log' that information.
 
 // Scopes and Closures
 
@@ -154,17 +158,17 @@ function varInFunction() {
     return outsideVar
 }
 
-// You can alawys find variables going from small scopes to much larger global scopes but you can't go the other direction and have a global function call a local scope defined variable. Doesn't work going that direction.
+// You can always find variables going from small scopes to much larger global scopes but you can't go the other direction and have a global function call a local scope defined variable. Doesn't work going that direction.
 
-varInFunction() // Since it has a return on the -oustideVar- variable - and that variable is in the global scope range - it will be found and returned when the function is called - as is right now.
+varInFunction() // Since it has a return on the -outsideVar- variable - and that variable is in the global scope range - it will be found and returned when the function is called - as is right now.
 
-// console.log(insideVariable); // This will throw up an error because this variable is only defined within a function - a limited scope variable and thus isnt found by the Javascript engine.
+// console.log(insideVariable); // This will throw up an error because this variable is only defined within a function - a limited scope variable and thus isn'
 
 const globalVariable = "Boom we're going global with this variable"
 
 // Lets use this variable in various other places
 
-const hello = "Hello World - Checkout my .js skillz "
+const hello = "Hello World - Checkout my .js skills "
 const goodbye = "Boom - I'm out this bitch"
 
 function sayHello() {
@@ -174,32 +178,19 @@ function sayHello() {
 console.log(hello); // Outputs to the console
 sayHello(goodbye) // Outputs to the console
 
-// Creating my own compound variables below - to help get my mind around closures and scopes
 
-/* var globalVariable_2 = someGlobal_Value
-
-function outsideScopeFunction() {
-  // Inner function
-  var localVar = some_Local_Value
-  return function insideScopeFunction (){}
-}
-
-function different_OutsideScopeFunction(args1) {
-  // Inner function - I'm just
-  var localVar_2 = some_OtherLocal_Value
-  return args1 + localVar_2
-}
-*/
 
 function outerFn() {
-    var outerVar = "I'm a variable in the outer function!"
+    const outerVar = "I'm a variable in the outer function!"
     console.log("I'm a log that's nested in the outerFn - not nested in the function innerFn");
 
     return function innerFn() {
+            const innerVar = "I'm a string variable inside a nested function"
             console.log(outerVar)
+            console.log(innerVar)
             console.log("This log is created from within the innerFn, nested function")
         }
-        // this didnt get sent to the console because it's after the return and nothing after the return gets run by the .js engine.
+        // this didn't get sent to the console because it's after the return and nothing after the return gets run by the .js engine.
 }
 
 // Storing a reference to the closure
@@ -207,7 +198,7 @@ const theInnerFunction = outerFn()
 
 // Calling the inner function
 theInnerFunction() // I'm a variable in the outer function!
-
+outerFn() //I'm curious to see if this breaks the code or if I get back the same thing as theInnerFunction() callback. 
 
 const macbook_DrKreiger = {
     operatingSystem: "macOS Sierra OSX",
@@ -251,7 +242,7 @@ console.log(macbook_DrKreiger)
 const emptyObject = {}
 
 emptyObject.firstProperty = "This is the first property string, could also be any of the other types of js we can have"
-emptyObject["secondProperty"] = "Second Propety set through using the bracket notation which I'm not a really huge fan of using as it is a legacy throw back"
+emptyObject["secondProperty"] = "Second Property set through using the bracket notation which I'm not a really huge fan of using as it is a legacy throw back"
 
 console.log(emptyObject.firstProperty)
 console.log(emptyObject["secondProperty"])
@@ -265,7 +256,7 @@ const weAreMakingMethodInsideThisVariable = {
 
 weAreMakingMethodInsideThisVariable.ourMethodHereBecauseOfTheFunctionAsValue()
 
-// I think that having overly obvious variable names and method calls that help elaborate more of the complex context of what's going on behind the scenese when things get excuted.
+// I think that having overly obvious variable names and method calls that help elaborate more of the complex context of what's going on behind the scenes when things get executed.
 
 const greeter = {
         sayHello: function(name) {
@@ -280,7 +271,7 @@ const greeter = {
 greeter.sayHello("Meghan")
 greeter.sayGoodBye("Shawn")
 
-// We're going to make Arrays now fro this point forward - Arrays are made with the [] square brackets and remember from last lesson that methods are using squigly {} brackets. 
+// We're going to make Arrays now fro this point forward - Arrays are made with the [] square brackets and remember from last lesson that methods are using squiggly {} brackets. 
 
 // Arrays are used to store list type of information - think of it as a grocery list - all the items pertaining to a particular them
 
@@ -302,7 +293,13 @@ const groceriesListToBuy = [
 const strings = ["One", "Two", "Three", "Four"]
 const numbers = [1, 2, 3, 4]
 const booleans = [true, false, true, true]
-const objects = [{ name: "Shawn" }, { name: "Meghan" }, { name: "Austin" }]
+const objects = [{
+    name: "Shawn"
+}, {
+    name: "Meghan"
+}, {
+    name: "Austin"
+}]
 const arrays = [
     [1, 2, 3],
     ["a", "b", "c"],
@@ -331,10 +328,15 @@ const booleans1 = [
     true
 ]
 
-const objects1 = [
-    { name: "Alex" },
-    { name: "Jenny" },
-    { name: "Mike" }
+const objects1 = [{
+        name: "Alex"
+    },
+    {
+        name: "Jenny"
+    },
+    {
+        name: "Mike"
+    }
 ]
 
 const arrays1 = [
@@ -554,8 +556,12 @@ const aBoolean = true
 
 // Try comparing objects and arrays with === or ==. You'll be very surprised.
 
-const a1 = { isHavingFun: true }
-const b1 = { isHavingFun: true }
+const a1 = {
+    isHavingFun: true
+}
+const b1 = {
+    isHavingFun: true
+}
 
 console.log(a1 === b1) // false
 console.log(a1 == b1) // false
@@ -572,7 +578,9 @@ console.log(a1 == b1) // false
 
 // Let's tweak it a little and assign a to b.
 
-const a = { isHavingFun: true }
+const a = {
+    isHavingFun: true
+}
 const b = a
 
 // In this case, a === b evaluates to true because b now points to the same reference as a.
