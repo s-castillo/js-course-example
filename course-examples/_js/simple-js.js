@@ -119,7 +119,7 @@ const sumArrowMethod = (num1, num2) => num1 + num2
 // THIS in javascript will be getting to at another point in the lessons but right now we're going to pass it up and move on to something else.
 
 // Working with Arrow notation:
-// This is technically correct but it needs to be don in new method way
+// This is technically correct but it needs to be done in new method way
 const ten = () => 10
 ten()
     //Correct way of expressing the exercise
@@ -136,7 +136,7 @@ loggerArrowMethod("This is my text that I'm passing through a simple anonymous f
 
 // Without Implicit Returns - You have to specifically add the return line to the code to get information to come back out.
 function add(num1, num2) {
-    return num1 + num2
+    return num1 + num2 // Had to add the return to this statement as this is not a implicit, arrow notation, function.
 }
 
 //With Implicit Returns - Javascript will automatically get that going for you and you dont have to worry about it as long as it all can be contained onto a single line of text - the code will work. Also have to remember to removed the parenthesis from the RHS
@@ -336,6 +336,9 @@ const objects1 = [{
     },
     {
         name: "Mike"
+    },
+    {
+        name: "Something Else"
     }
 ]
 
