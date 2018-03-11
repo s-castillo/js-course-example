@@ -15,7 +15,7 @@ console.log(20 + 3)
 console.log(26 - 3)
 console.log(13 * 2)
 console.log(46 / 2)
-    // Yea we can do math in the console since you know our computers are glorified calculators so doing basic, and even more complex math can easily be handled by .js 
+// Yea we can do math in the console since you know our computers are glorified calculators so doing basic, and even more complex math can easily be handled by .js 
 
 
 // Boom we're declaring variables now - it used be we used the VAR declaration but now since the new update with .js - its better if we start using the CONST declaration. 
@@ -45,7 +45,7 @@ function nameNoted(firstName, lastName) {
 }
 
 nameNoted("Shawn", "Castillo")
-    //This is basically saying that we're assigning a value of Shawn to firstName and a value of Castillo to lastName - You dont necessarily need to declare a variable separately to assign a value - this is when you're declaring and invoking the function after
+//This is basically saying that we're assigning a value of Shawn to firstName and a value of Castillo to lastName - You dont necessarily need to declare a variable separately to assign a value - this is when you're declaring and invoking the function after
 
 function logger(someLog) {
     console.log(someLog)
@@ -69,7 +69,7 @@ multiplyMyNumbers(23, 2)
 // Arrow function notation => this is what it looks like. Its different and is used in a very different way.
 
 // What a normal anonymous function looks like.
-const normalFunction = function(arg1, arg2) {
+const normalFunction = function (arg1, arg2) {
     // Do some really cool code stuff here
 }
 
@@ -108,13 +108,13 @@ const oneArgumentWithParenthesis = (arg1) => { /* Do some more really cool stuff
 // Also remember that this is for very basic of anonymous functions that can be contained within a single line of code
 
 // Old method
-const sumNormal = function(num1, num2) {
+const sumNormal = function (num1, num2) {
     return num1 + num2
 }
 
 // New method of writing the same thing out
 const sumArrowMethod = (num1, num2) => num1 + num2
-    // It does feel very weird that I dont have to write the ; after the very end of the variable. Makes me still feel uncomfortable.
+// It does feel very weird that I dont have to write the ; after the very end of the variable. Makes me still feel uncomfortable.
 
 // THIS in javascript will be getting to at another point in the lessons but right now we're going to pass it up and move on to something else.
 
@@ -122,9 +122,9 @@ const sumArrowMethod = (num1, num2) => num1 + num2
 // This is technically correct but it needs to be done in new method way
 const ten = () => 10
 ten()
-    //Correct way of expressing the exercise
-    // const ten = _ => 10
-    // You log the argument not the name of the function - you call the name of the function and pass something into it to get something out of it - just calling the function will bring back the function code itself and not the date generated from the function parameters/rules.
+//Correct way of expressing the exercise
+// const ten = _ => 10
+// You log the argument not the name of the function - you call the name of the function and pass something into it to get something out of it - just calling the function will bring back the function code itself and not the date generated from the function parameters/rules.
 
 const loggerArrowMethod = (logArg1) => {
     console.log(logArg1);
@@ -185,12 +185,12 @@ function outerFn() {
     console.log("I'm a log that's nested in the outerFn - not nested in the function innerFn");
 
     return function innerFn() {
-            const innerVar = "I'm a string variable inside a nested function"
-            console.log(outerVar)
-            console.log(innerVar)
-            console.log("This log is created from within the innerFn, nested function")
-        }
-        // this didn't get sent to the console because it's after the return and nothing after the return gets run by the .js engine.
+        const innerVar = "I'm a string variable inside a nested function"
+        console.log(outerVar)
+        console.log(innerVar)
+        console.log("This log is created from within the innerFn, nested function")
+    }
+    // this didn't get sent to the console because it's after the return and nothing after the return gets run by the .js engine.
 }
 
 // Storing a reference to the closure
@@ -248,7 +248,7 @@ console.log(emptyObject.firstProperty)
 console.log(emptyObject["secondProperty"])
 
 const weAreMakingMethodInsideThisVariable = {
-    ourMethodHereBecauseOfTheFunctionAsValue: function() {
+    ourMethodHereBecauseOfTheFunctionAsValue: function () {
         // We'd have some code that would execute something here
         console.log("Our Code Did Something because of our Method was triggered")
     }
@@ -259,14 +259,14 @@ weAreMakingMethodInsideThisVariable.ourMethodHereBecauseOfTheFunctionAsValue()
 // I think that having overly obvious variable names and method calls that help elaborate more of the complex context of what's going on behind the scenes when things get executed.
 
 const greeter = {
-        sayHello: function(name) {
-            console.log("Hello " + name + "!")
-        },
-        sayGoodBye: function(name) {
-            console.log("Goodbye " + name + ", it was great to have you learn javascript with me")
-        }
+    sayHello: function (name) {
+        console.log("Hello " + name + "!")
+    },
+    sayGoodBye: function (name) {
+        console.log("Goodbye " + name + ", it was great to have you learn javascript with me")
     }
-    // You have to remember that when you're wanting to pass in a string as a parameter - you have to wrap in quotes 
+}
+// You have to remember that when you're wanting to pass in a string as a parameter - you have to wrap in quotes 
 
 greeter.sayHello("Meghan")
 greeter.sayGoodBye("Shawn")
@@ -366,7 +366,7 @@ const peopleArray = [
     'Benjamin Franklin',
     'Thomas Edison',
     'Franklin Roosevelt',
-    'Napolean Bonaparte',
+    'Napoleon Bonaparte',
     'Abraham Lincoln',
     'Mother Theresa',
     'Mahatma Gandhi',
@@ -404,13 +404,13 @@ const newPeopleArray = peopleArray.concat('Beer')
 const friendAdd = peopleArray.concat(friendAddNameArray)
 
 console.log(peopleArray)
-    // This just logs the old array unchanged
+// This just logs the old array unchanged
 
 console.log(newPeopleArray)
-    // This logs the new array after the addition has been added - Beer
+// This logs the new array after the addition has been added - Beer
 
 console.log(friendAdd)
-    // This logs the new array after the addition has been added - Shawn Added
+// This logs the new array after the addition has been added - Shawn Added
 
 // Okay so what we're doing above is that we're making a variable called "friendAdd" that then takes the "people" array and "concat" which means to add something to our original array list "people"
 
@@ -432,7 +432,7 @@ const slicedArray = arrayToSlice.slice()
 const slicedArray2 = arrayToSlice.slice(2, 5)
 
 console.log(slicedArray2)
-    // This is going to be the condensed slice from spots [2] and [5] If you provide an endIndex value, slice copies up to, but not including, the item you've indicated with the index.
+// This is going to be the condensed slice from spots [2] and [5] If you provide an endIndex value, slice copies up to, but not including, the item you've indicated with the index.
 
 // Okay so what if we wanted to just remove the ending of an array - we know what the array is and that we want to remove this last item - format the variable in this way (0,-1) this calls for the last item (0,-2) calls for the SECOND to last item - and so on - Negative numbers can only be used in slice 
 
@@ -447,9 +447,9 @@ const endSlice = arrayToSlice.slice(4)
 
 // This is where we'll combine both of our arrays into a new array 
 const combinedSlicedArray = frontSlice.concat(endSlice)
-    // or with an empty initial array like the following
+// or with an empty initial array like the following
 const combinedSlicedArrayAlternate = [].concat(frontSlice, endSlice)
-    // This will produce the same output as the previous variable declaration. 
+// This will produce the same output as the previous variable declaration. 
 const superCondensedSlicedArray = [].concat(arrayToSlice.slice(0, 2), arrayToSlice.slice(4))
 
 console.log(combinedSlicedArray) // This will log our new array minus the numbers we were trying to remove from our original array.
@@ -515,10 +515,10 @@ if ("light is red") {
 
 // However, there's a difference between strictly equal (===) vs equal (==), and strictly unequal (!==) vs unequal (!=):
 
-    '24' === 24 // False - Strictly Equal
+'24' === 24 // False - Strictly Equal
     '24' == 24 // True - Equal
 
-    '24' !== 24 // True - Strictly UnEqual
+'24' !== 24 // True - Strictly UnEqual
     '24' != 24 // False - UnEqual
 
 // As you can see from the example above, when you compare a string of 24 vs the number 24, === evaluates to false while == evaluates to true.
@@ -535,7 +535,7 @@ const aBoolean = true
 
 // When comparing things with strictly equal (===) or strictly unequal (!==), JavaScript checks the type of variable. This is why a string of 24 and a number 24 do not equate.
 
-    '24' === 24 // False - Strictly Equal String is not a Number
+'24' === 24 // False - Strictly Equal String is not a Number
     '24' !== 24 // True - Strictly UnEqual
 
 // When comparing things with equal (==) or unequal (!=), JavaScript converts (or casts) the types so they match each other.
@@ -544,7 +544,7 @@ const aBoolean = true
 
 // That's why a string of 24 equates to a number of 24 when you use ==.
 
-    '24' == 24 // True
+'24' == 24 // True
     '24' != 24 // False
 
 // Booleans can also be converted into numbers. When JavaScript converts Booleans into numbers, true becomes 1 and false becomes 0.
@@ -658,4 +658,3 @@ if ("light is red" && "cars around") {
 // NOT: !
 
 // Dom Basics / Selecting an Element
-
