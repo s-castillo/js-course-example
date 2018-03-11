@@ -210,6 +210,8 @@ const macbook_DrKreiger = {
     sdCardReaderPort: 1,
     storage: "500GB",
     textEditor: "Atom",
+    simpleArray: [],
+    simpleObject: {}
 }
 
 const imac_DeathStar = {
@@ -220,7 +222,9 @@ const imac_DeathStar = {
     hdmiPorts: 2,
     sdCardReaderPort: 1,
     storage: "1TB",
-    textEditor: "Visual Studio Code"
+    textEditor: "Visual Studio Code",
+    simpleArray: [],
+    simpleObject: {}
 }
 
 const pc_MeghansLaptop = {
@@ -232,7 +236,9 @@ const pc_MeghansLaptop = {
     thunderboltPorts: 0,
     sdCardReaderPort: 1,
     storage: "500GB",
-    textEditor: "None"
+    textEditor: "None",
+    simpleArray: [],
+    simpleObject: {}
 }
 
 const operatingSystem = macbook_DrKreiger.operatingSystem
@@ -434,7 +440,7 @@ const slicedArray2 = arrayToSlice.slice(2, 5)
 console.log(slicedArray2)
 // This is going to be the condensed slice from spots [2] and [5] If you provide an endIndex value, slice copies up to, but not including, the item you've indicated with the index.
 
-// Okay so what if we wanted to just remove the ending of an array - we know what the array is and that we want to remove this last item - format the variable in this way (0,-1) this calls for the last item (0,-2) calls for the SECOND to last item - and so on - Negative numbers can only be used in slice 
+// Okay so what if we wanted to just remove the ending of an array - we know what the array is and that we want to remove this last item - format the variable in this way (0,-1) this calls for the LAST item (0,-2) calls for the SECOND to last item - and so on - Negative numbers can only be used in slice 
 
 // Now we're going to set up a situation that we're wanting remove some items from the middle of the known array:
 // Rough Idea is to slice out the parts we want to retain and then join them .concat them back to gather at the end of this.  
@@ -507,10 +513,8 @@ if ("light is red") {
 24 >= 24 // True
 
 24 < 25 // True
-24 < 24 // False
-24 <= 24 // True
-
-24 === 24 // True
+24 < 24 / jui === === === === === === === === === === === === === === === === =
+    24 === 24 // True
 24 !== 24 // False
 
 // However, there's a difference between strictly equal (===) vs equal (==), and strictly unequal (!==) vs unequal (!=):
