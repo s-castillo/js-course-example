@@ -496,8 +496,8 @@ if ("light is red") {
 
 // We have the following example of the different types of comparison operators
 
-// Greater than (>) or greater or equals to (>=)
-// Smaller than (<) or smaller or equals to (<=)
+// Greater than (>) or greater than or equals to (>=)
+// Smaller than (<) or smaller than or equals to (<=)
 // Strictly equal (===) or equal ==
 // Strictly unequal (!==) or unequal !=
 
@@ -656,3 +656,6 @@ if ("light is red" && "cars around") {
 // AND: &&
 // OR: ||
 // NOT: !
+
+// Dom Basics / Selecting an Element
+
